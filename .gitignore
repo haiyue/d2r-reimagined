@@ -17,11 +17,10 @@ dist/
 *.swo
 *~
 
-# Wiki.js 数据库和运行时
+# Wiki.js 服务（编译后的文件和数据库）
+server/wikijs-server/
 db.sqlite
 db.sqlite-*
-wikijs-server/data/
-wikijs-server/node_modules/
 
 # 临时备份
 wiki*.backup-*/
@@ -29,13 +28,6 @@ wiki-zh*.backup-*/
 
 # 本地项目结构（保留wiki和wiki-zh两个子模块内容）
 archives/
-docs/（空目录，无需跟踪）
 
 # VS Code 工作区（私有）
 d2r-reimagined.code-workspace
-
-# Wiki.js 数据库和运行时
-db.sqlite
-db.sqlite-*
-wikijs-server/data/
-wikijs-server/node_modules/
