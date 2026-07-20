@@ -1,0 +1,29 @@
+# 环境与开发
+.env
+.env.local
+.venv/
+node_modules/
+dist/
+.DS_Store
+
+# 日志和缓存
+.logs/
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# 临时备份
+wiki*.backup-*/
+wiki-zh*.backup-*/
+
+# 本地项目结构（保留wiki和wiki-zh两个子模块内容）
+archives/
+docs/（空目录，无需跟踪）
+
+# VS Code 工作区（私有）
+d2r-reimagined.code-workspace
