@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>D2R Reimagined</title>
+  <meta name="description" content="D2R Reimagined Mod Project">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/">
+  <link rel="stylesheet" href="/assets/fonts.css" />
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="Reimagined" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <script type="module" src="/assets/index-CTTJeB_J.js"></script>
+  <link rel="stylesheet" href="/assets/index-CcKPfL5H.css">
+</head>
+
+<body>
+  <script>
+    (function () {
+      try {
+        var allowed = ['font-classic', 'font-resurrected', 'font-neutral'];
+        var stored = localStorage.getItem('font');
+        var cssClass = allowed.indexOf(stored) !== -1 ? stored : 'font-resurrected';
+
+        function apply(cls) {
+          var b = document.body;
+          if (!b) return false;
+          for (var i = 0; i < allowed.length; i++) b.classList.remove(allowed[i]);
+          b.classList.add(cls);
+          return true;
+        }
+
+        if (!apply(cssClass)) {
+          document.addEventListener('DOMContentLoaded', function () { apply(cssClass); });
+        }
+      } catch (e) { /* no-op */ }
+    })();
+  </script>
+  <app></app>
+</body>
+
+</html>

@@ -1,9 +1,3 @@
-[submodule "website"]
-	path = website
-	url = git@github.com:haiyue/d2r-reimagined-website.git
-[submodule "wiki"]
-	path = wiki
-	url = git@github.com:haiyue/d2r-reimagiend-wiki.git
 [submodule "wiki-zh"]
 	path = wiki-zh
 	url = git@github.com:haiyue/d2r-reimagined-wiki-zh.git

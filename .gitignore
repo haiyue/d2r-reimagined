@@ -31,3 +31,8 @@ archives/
 
 # VS Code 工作区（私有）
 d2r-reimagined.code-workspace
+
+# 临时/中间目录（内容已同步到 website/ 和 wiki/）
+mod_tmp/
+reimagined-mod-website/
+wiki-content-main/
