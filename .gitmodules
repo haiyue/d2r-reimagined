@@ -7,3 +7,6 @@
 [submodule "wiki-zh"]
 	path = wiki-zh
 	url = git@github.com:haiyue/d2r-reimagined-wiki-zh.git
+[submodule "mod"]
+	path = mod
+	url = https://github.com/haiyue/d2r-reimagined-mod.git

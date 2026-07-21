@@ -56,7 +56,8 @@ start_wiki() {
         return
     fi
     echo "[wiki] 启动中..."
-    node "$WIKI_DIR/server" >"$LOG_DIR/wiki.log" 2>&1 &
+    cd "$WIKI_DIR" && node server >"$LOG_DIR/wiki.log" 2>&1 &
+    cd "$REPO_ROOT"
     echo $! >"$WIKI_PID_FILE"
     echo "[wiki] PID $! — 日志：$LOG_DIR/wiki.log"
 }
