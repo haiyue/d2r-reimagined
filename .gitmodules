@@ -1,12 +1,15 @@
 [submodule "website"]
 	path = website
 	url = git@github.com:haiyue/d2r-reimagined-website.git
+	branch = master
 [submodule "wiki"]
 	path = wiki
 	url = git@github.com:haiyue/d2r-reimagined-wiki.git
+	branch = main
 [submodule "wiki-zh"]
 	path = wiki-zh
 	url = git@github.com:haiyue/d2r-reimagined-wiki-zh.git
+	branch = main
 [submodule "mod"]
 	path = mod
 	url = git@github.com:haiyue/d2r-reimagined-mod.git
